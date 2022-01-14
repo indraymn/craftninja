@@ -2,10 +2,6 @@
 
 <style>
  /* BASIC */
-
- html {
-    background-color: $teal-500;
-  }
   
  body {
     font-family: "Poppins", sans-serif;
