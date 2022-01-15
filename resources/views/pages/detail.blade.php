@@ -454,28 +454,28 @@
             @endif
 
             <div class="col-sm-1 col-sm-offset-9">
-                <a href=""  data-toggle="modal" data-target="#reportModal" class="btn btn-danger">Report Iklan</a>
+                <a href=""  data-toggle="modal" data-target="#reportModal" class="btn btn-danger">Order</a>
             </div>
         </div>
         <div class="modal fade" id="reportModal" tabindex="-1" role="dialog" aria-labelledby="reportModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h3 class="modal-title" id="exampleModalLabel">Laporkan Iklan</h3>
+                  <h3 class="modal-title" id="exampleModalLabel">Kategori Order</h3>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
                 <div class="modal-body">
-                    <h5>Apa yang salah dengan iklan ini?</h5>
+                    <h5>Bagaimana anda ingin order?</h5>
                     <input class="iklan" type="radio" />
-                    <label for="iklan">Tak Pantas</label>
+                    <label for="iklan">Datang ketempat</label>
                     <br/>
                     <input class="iklan" type="radio" />
-                    <label for="iklan">Tidak Relevan</label>
+                    <label for="iklan">Datang kerumah</label>
                     <br/>
                     <input class="iklan" type="radio" />
-                    <label for="iklan">Berulang</label>
+                    <label for="iklan">Periksa Lokasi Anda</label>
                     <br/>
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                     {{Form::submit('Submit',['class' => 'btn btn-primary', 'data-toggle'=>"modal", 'data-target'=>"#thankyouModal",'data-dismiss'=>"modal"])}}
@@ -487,13 +487,13 @@
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h3 class="modal-title" id="exampleModalLabel">Terimakasih atas Laporannya</h3>
+                  <h3 class="modal-title" id="exampleModalLabel">Order Berhasil</h3>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
                 <div class="modal-body">
-                    <h5>Kami akan mencoba untuk tidak menampilkannya lagi</h5>
+                    <h5>Mohon ditunggu</h5>
                      </div>
               </div>
             </div>
